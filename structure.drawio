@@ -1,83 +1,76 @@
 <mxfile host="65bd71144e">
     <diagram id="uNyjnKu4HNoRyHo5nHWr" name="Page-1">
-        <mxGraphModel dx="1065" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="910" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="4" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" parent="1" source="2" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="5">
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;" parent="1" source="2" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="" style="edgeStyle=none;html=1;exitX=0.992;exitY=0.374;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="18" target="15">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="17" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="18">
+                <mxCell id="17" style="edgeStyle=none;html=1;entryX=0.195;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="350" y="280" as="targetPoint"/>
+                        <mxPoint x="400" y="260" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" value="App" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="29" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="App" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="310" y="160" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="NavBar&lt;br&gt;&lt;br&gt;-home, recipes, favorites" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="3" value="NavBar&lt;br&gt;&lt;br&gt;-home, recipes, favorites" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="20" y="260" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="Home&lt;br&gt;&lt;br&gt;-header, p-tag, btn&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="5" value="Home&lt;br&gt;&lt;br&gt;-header, p-tag, btn&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="180" y="260" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="11">
+                <mxCell id="12" value="" style="edgeStyle=none;html=1;" parent="1" source="8" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Recipes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Recipes&lt;br&gt;-fetch from API" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="230" y="380" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="9" target="21">
+                <mxCell id="22" value="" style="edgeStyle=none;html=1;" parent="1" source="9" target="21" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="Favorites" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="9" value="Favorites&lt;br&gt;-fetch from db.json" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="400" y="380" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="11" target="13">
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;" parent="1" source="11" target="13" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="RecipeList&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;-&lt;/font&gt;&lt;font size=&quot;1&quot;&gt;initial rendering of 25ish cards&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="11" value="RecipeList&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;-&lt;/font&gt;&lt;font size=&quot;1&quot;&gt;initial rendering of 25ish cards&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="230" y="490" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="RecipeCard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="13" value="RecipeCard" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="230" y="600" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="Search" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="560" y="380" width="130" height="60" as="geometry"/>
+                <mxCell id="15" value="Search" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="440" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="8">
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="280" y="360" as="targetPoint"/>
+                        <mxPoint x="400" y="320" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="20" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="9">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="470" y="390" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="29" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.008;entryY=0.381;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="18" target="25">
+                <mxCell id="24" value="" style="edgeStyle=none;html=1;" parent="1" source="21" target="23" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="RecipeContainer&lt;br&gt;-potential fetch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="340" y="260" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="24" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="21" target="23">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="21" value="FavoriteList" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="21" value="FavoriteList" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="400" y="480" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="FavoriteCard" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="23" value="FavoriteCard" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="400" y="600" width="130" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="&lt;font style=&quot;font-size: 10px&quot;&gt;FullRecipe&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;-recipe card clicked in either recipes or favorites to view full recipe&lt;br&gt;- full recipe rendered on &quot;separate page&quot;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="720" y="370" width="120" height="60" as="geometry"/>
+                <mxCell id="25" value="&lt;font style=&quot;font-size: 10px&quot;&gt;FullRecipe&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;-recipe card clicked in either recipes or favorites to view full recipe&lt;br&gt;- full recipe rendered on &quot;separate page&quot;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="370" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
