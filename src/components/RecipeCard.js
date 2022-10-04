@@ -1,9 +1,30 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 
-const RecipeCard = ({id, recipeDetails}) => {
+const RecipeCard = ({id, recipeDetails, checkFavoriteId}) => {
+  const [isFavorited, setIsFavorited] = useState(false);
   
-  
+  //check to see if something is already favorited
+  if (checkFavoriteId && isFavorited === false) {
+    setIsFavorited(true);
+  } 
+
+  //handle actual add-to-favorites button
+  const handleFavorite = () => {
+    if (!isFavorited) {
+      fetch("http://localhost:3001/favorites", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(
+          recipeDetails.recipe
+        ),
+      })
+      
+      setIsFavorited((isFavorited) => !isFavorited);
+    }
+  }
  
   return (
     <div className="recipe-card">
@@ -12,7 +33,7 @@ const RecipeCard = ({id, recipeDetails}) => {
       <Link to={`/recipes/${id}`}>
         <button className="recipe-button">View Ingredients</button>
       </Link>
-      <button className="favorite-button">Add to Favorites</button>
+      <button className="favorite-button" onClick={handleFavorite}>{isFavorited? " Favorited!" : "Add to Favorites"}</button>
     </div>
   )
 }

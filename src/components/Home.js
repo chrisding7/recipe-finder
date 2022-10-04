@@ -7,7 +7,7 @@ const Home = () => {
       <h1>Recipe Finder</h1>
       <p>Project Description</p>
       <Link to='/recipes'>
-        <button>Search Recipes</button>
+        <button>Explore Recipes</button>
       </Link>
     </div>
   )
