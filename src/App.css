@@ -42,3 +42,10 @@
 .recipe-card img{
   height: 200px;
 }
+
+
+/* ------------FULL RECIPE COMPONENT----------- */
+.ingredient-list{
+  list-style-type: none;
+}
+

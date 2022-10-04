@@ -10,7 +10,7 @@ const RecipeCard = ({id, recipeDetails}) => {
       <h3>{recipeDetails.recipe.label}</h3>
       <img src={recipeDetails.recipe.image} alt={recipeDetails.recipe.label}/>
       <Link to={`/recipes/${id}`}>
-        <button className="recipe-button">View Recipe</button>
+        <button className="recipe-button">View Ingredients</button>
       </Link>
       <button className="favorite-button">Add to Favorites</button>
     </div>
