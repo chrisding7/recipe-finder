@@ -1,12 +1,12 @@
 import React from 'react';
 import RecipeCard from './RecipeCard';
-
 const RecipeList = ({ recipeData }) => {
 
 const renderRecipes = recipeData.map(recipe => {
-  const recipeId = recipe.recipe.ingredients.map(ing => ing.foodId);
+  const id = recipe.recipe.uri.slice(-32)
+  
   return(
-    <RecipeCard key={recipeId} recipeDetails={recipe}/>
+    <RecipeCard key={id} id={id} recipeDetails={recipe}/>
   )
 })
 
