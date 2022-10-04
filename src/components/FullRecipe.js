@@ -19,14 +19,28 @@ const FullRecipe = () => {
   
 console.log(fullRecipe)
 
+
 //for initial loading of data
 if (!fullRecipe) {
   return <h2>Loading...</h2>
 }
 
+const ingredients = fullRecipe.recipe.ingredientLines;
+
   return (
     <div className='full-recipe'>
-      <h2>{fullRecipe.recipe.label}</h2>
+      <h2 className="full-recipe-header">{fullRecipe.recipe.label}</h2>
+      <img src={fullRecipe.recipe.images.REGULAR.url} alt={fullRecipe.recipe.label}/>
+      <ul className="ingredient-list">
+          {ingredients.map((ing) => {
+            return <li key={ing}>{ing}</li>
+          })}
+      </ul>
+
+      <a href={fullRecipe.recipe.url} target="_blank" rel="noreferrer">
+        <button>Full Recipe</button>
+      </a>
+
     </div>
   )
 
