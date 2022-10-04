@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import './App.css';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -13,20 +13,24 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route  path="/recipes">
-          <Recipes />
-        </Route>
-        <Route  path="/favorites">
-          <Favorites />
-        </Route>
-      </Switch>
-
-     
+        <NavBar />
+        <div className="content-containter">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route  exact path="/recipes">
+              <Recipes />
+            </Route>
+            <Route  exact path="/recipes/:id">
+              <FullRecipe />
+            </Route>
+            <Route  path="/favorites">
+              <Favorites />
+            </Route>
+          </Switch>
+          
+      </div>
     </div>
   );
 }

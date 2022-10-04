@@ -6,6 +6,7 @@ const Search = ({setSearchSubmit}) => {
   function handleSubmit(e) {
     e.preventDefault();
     setSearchSubmit(search);
+    setSearch('')
   }
 
   return (

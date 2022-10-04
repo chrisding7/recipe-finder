@@ -1,5 +1,28 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.nav{
+  text-align: left;
+}
+
+.nav a{
+  text-decoration: none;
+  margin: 10px;
+  color:rgb(220, 31, 31);
+  transition: 0.5s ease-in-out;
+
+  
+}
+
+.nav a:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
+  cursor: pointer;
+  
 }
 
 .recipe-list {
@@ -13,5 +36,9 @@
   margin: 5px 10px;
   border: solid grey 3px;
   padding: 5px 5px;
-  max-width: 300px;
+  max-width: 200px;
+}
+
+.recipe-card img{
+  height: 200px;
 }
