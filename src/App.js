@@ -10,7 +10,6 @@ import FullRecipe from './components/FullRecipe';
 
 
 function App() {
-
   return (
     <div className="App">
         <NavBar />
