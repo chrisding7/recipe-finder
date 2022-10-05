@@ -44,7 +44,7 @@ const Recipes = () => {
       <h1>Recipes</h1>
       <Search setSearchSubmit={setSearchSubmit}/>
       <RecipeList recipeData={recipeData}/>
-      <button className="show-more-button" onClick={showMoreRecipes}>Show More</button>
+      <button className="show-more-btn" onClick={showMoreRecipes}>Show More</button>
     </div>
   )
 }

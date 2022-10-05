@@ -16,9 +16,9 @@ const FavoriteCard = ({recipeLinkId, recipeDetails, onDelete}) => {
       <h3>{recipeDetails.label}</h3>
       <img src={recipeDetails.image} alt={recipeDetails.label}/>
       <Link to={`/recipes/${recipeLinkId}`}>
-        <button className="recipe-button">View Ingredients</button>
+        <button className="recipe-btn">View Ingredients</button>
       </Link>
-      <button className="favorite-button" onClick={() => handleDelete(recipeDetails.id)}>Remove From Favorites</button>
+      <button className="favorite-btn" onClick={() => handleDelete(recipeDetails.id)}>Remove From Favorites</button>
     </div>
   )
 }
