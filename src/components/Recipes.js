@@ -15,7 +15,7 @@ const Recipes = () => {
 
   // GET recipe data
   useEffect(() => {
-    fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${searchSubmit}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_API_KEY}`)
+    fetch(`/v2?type=public&q=${searchSubmit}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`)
     .then(res => res.json())
     .then(data => {
       console.log(data)
