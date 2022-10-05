@@ -1,51 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+
+/* Global styles */
+
+:root{
+  --main-salmon: #e95b42;
+  --main-dkBlue: #122d45;
+  --main-beige: #f6f2e8;
+  --main-font:'Abyssinica SIL', serif;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+  color: var(--main-dkBlue);
+  font-family: var(--main-font);
 }
 
-.nav{
-  text-align: left;
+/* Headers on main components */
+.recipes h1, .full-recipe h2{
+  text-decoration: var(--main-salmon) underline;
+}
+
+button {
+  background-color: var(--main-salmon);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+
+button:hover{
+  font-weight: bold;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+/*------------ NAVBAR -------- */
+.nav {
+  padding-top: 1vh;
+  margin-bottom: 6vh;
+  width: 100vw;
+  display: flex;
+  justify-content: left;
+  align-items:left;
+  flex-direction: row;
+  background-color: rgba(245, 239, 239, 0.6);
+	backdrop-filter: blur(5px);
+  position: fixed;
+  z-index: 2;
+  max-width: 1500px;
+  
+ 
 }
 
 .nav a{
+  color: var(--main-dkBlue);
+  font-size: 1rem;
+  font-weight: bold;
   text-decoration: none;
-  margin: 10px;
-  color:rgb(220, 31, 31);
-  transition: 0.5s ease-in-out;
-
+  padding: 1.5vw 0; 
+  margin: 0 2vw;
+  transition: 0.2s ease-in-out;
   
+
 }
 
 .nav a:hover{
-  text-decoration: underline;
+  text-decoration: underline 2px solid var(--main-salmon);
   transform: scale(1.1);
   cursor: pointer;
-  
+ 
+
 }
 
+
+/*------- HOME ------- */
+.home{
+  height: 100vh;
+  width: 100vw;
+  padding: none;
+  margin: none;
+  max-width: 1500px;
+  max-height: 1200px;  
+  background-image: url("./images/meal-mariana-medvedeva-unsplash.jpg");
+  background-position: top -200px right 0px; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.home-info{
+  width: 30vw;
+  max-width: 500px;
+  color: var(--main-dkBlue);
+  background-color: rgba(245, 239, 239, 0.6);
+	backdrop-filter: blur(5px);
+	padding: 2rem;
+  border: 4px solid var(--main-dkBlue);
+  border-radius: 4px;
+  font-weight: bold;
+
+}
+
+/*-------- SEARCH --------*/
+.searchbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+}
+
+.searchbar input{
+  margin: 5px 10px;
+  padding: 8px;
+  width: 180px;
+  border: 2px solid var(--main-dkBlue);
+  border-radius: 4px;
+}
+
+.submit-btn{
+  color: var(--main-salmon);
+  background-color: var(--main-beige);
+  border: 2px solid var(--main-salmon);
+  margin: 2px;
+  padding: 8px;
+}
+
+
+
+/*------RECIPE & FAVORITES --------*/
+
+.recipes{
+  margin: 100px 50px;
+  
+}
 .recipe-list {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  margin: 10px;
+  max-width: 1200px;
 }
 
 .recipe-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--main-beige);
   margin: 5px 10px;
-  border: solid grey 3px;
-  padding: 5px 5px;
+  border: solid var(--main-dkBlue) 3px;
+  border-radius: 4px;
+  padding: 5px 15px;
+  width: 180px;
   max-width: 200px;
+  box-shadow: 10px 10px 8px #d3d0d0;
 }
 
 .recipe-card img{
-  height: 200px;
+  height: 180px;
+  border-radius: 4px;
+  margin: 10px 0;
+  
 }
 
+.recipe-btn{
+  color: var(--main-salmon);
+  background-color: var(--main-beige);
+  font-weight: bold;
+}
+.favorite-btn-active{
+  background-color: var(--main-dkBlue);
+}
+
+.show-more-btn{
+  color: var(--main-salmon);
+  background-color: var(--main-beige);
+  border: 1px solid var(--main-salmon);
+  margin: 50px;
+}
 
 /* ------------FULL RECIPE COMPONENT----------- */
+.full-recipe{
+  margin: 100px 50px;
+    
+}
+.full-recipe img{
+  border: 2px solid var(--main-dkBlue);
+  border-radius: 4px;
+  margin: 15px 0px;
+}
+
 .ingredient-list{
   list-style-type: none;
+  padding: 10px;
+  
+}
+
+.full-recipe button{
+  margin-bottom: 50px;
 }
 

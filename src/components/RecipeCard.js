@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const RecipeCard = ({id, recipeDetails, checkFavoriteId}) => {
@@ -25,15 +25,17 @@ const RecipeCard = ({id, recipeDetails, checkFavoriteId}) => {
       setIsFavorited((isFavorited) => !isFavorited);
     }
   }
+
+  const faveBtnClass = isFavorited ? "favorite-btn-active" : "favorite-btn";
  
   return (
     <div className="recipe-card">
       <h3>{recipeDetails.recipe.label}</h3>
       <img src={recipeDetails.recipe.image} alt={recipeDetails.recipe.label}/>
       <Link to={`/recipes/${id}`}>
-        <button className="recipe-button">View Ingredients</button>
+        <button className="recipe-btn">View Ingredients</button>
       </Link>
-      <button className="favorite-button" onClick={handleFavorite}>{isFavorited? " Favorited!" : "Add to Favorites"}</button>
+      <button className={faveBtnClass} onClick={handleFavorite}>{isFavorited? " Favorited!" : "Add to Favorites"}</button>
     </div>
   )
 }

@@ -31,9 +31,10 @@ const ingredients = fullRecipe.recipe.ingredientLines;
     <div className='full-recipe'>
       <h2 className="full-recipe-header">{fullRecipe.recipe.label}</h2>
       <img src={fullRecipe.recipe.images.REGULAR.url} alt={fullRecipe.recipe.label}/>
+      <h3>Ingredients</h3>
       <ul className="ingredient-list">
           {ingredients.map((ing) => {
-            return <li key={ing}>{ing}</li>
+            return <li key={ing}>{ing} <input type="checkbox" /></li>
           })}
       </ul>
 
