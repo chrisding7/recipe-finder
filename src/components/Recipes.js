@@ -5,7 +5,6 @@ import Search from './Search';
 const Recipes = () => {
   const randomFoods = ['chicken', 'tasty', 'chocolate', 'pasta', 'fruit', 'beef']
   const randomIndex = Math.floor((Math.random() * randomFoods.length)); //return an integer from 0 to 5 (randomFoods.length-1)
-  console.log(randomIndex)
   
   //state
   const [recipeData, setRecipeData] = useState([]);
@@ -14,15 +13,17 @@ const Recipes = () => {
 
 
   // GET recipe data
-  useEffect(() => {
+    useEffect(() => {
     fetch(`/v2?type=public&q=${searchSubmit}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`)
     .then(res => res.json())
     .then(data => {
-      console.log(data)
-        setNextRecipes(data["_links"].next.href);
-        setRecipeData(data.hits) 
+      if (data.message === "Usage limits are exceeded") {
+        alert('Too many requests! Please wait a minute and try again.')
+        throw new Error('Too many requests! Please wait a minute and try again.')
+      }
+      setNextRecipes(data["_links"].next.href);
+      setRecipeData(data.hits) 
     })
-    .then(console.error)
 
   },[searchSubmit])
 

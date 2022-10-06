@@ -9,7 +9,6 @@ const [favorites, setFavorites] = useState([]);
     fetch(`http://localhost:3001/favorites`)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
       setFavorites(data)
     })
     .catch(console.error)
@@ -18,8 +17,6 @@ const [favorites, setFavorites] = useState([]);
   const faveIds = favorites.map(fav => {
     return fav.uri.slice(-32)
   })
-
-  console.log(faveIds)
 
   const renderRecipes = recipeData.map(recipe => {
     const id = recipe.recipe.uri.slice(-32)
