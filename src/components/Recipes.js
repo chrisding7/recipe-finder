@@ -10,6 +10,8 @@ const Recipes = () => {
   const [recipeData, setRecipeData] = useState([]);
   const [searchSubmit, setSearchSubmit] = useState(randomFoods[randomIndex]);
   const [nextRecipes, setNextRecipes] = useState('')
+  console.log(process.env.REACT_APP_API_ID);
+  console.log(process.env.REACT_APP_API_KEY);
 
 
   // GET recipe data
