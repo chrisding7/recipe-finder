@@ -118,7 +118,8 @@ button:hover{
 }
 .home-info p{
   margin: 0 auto 25px auto;
-  width: 300px;
+  width: 20vw;
+ 
 }
 
 /*-------- SEARCH --------*/
@@ -265,6 +266,7 @@ button:hover{
   border: 2px solid var(--main-dkBlue);
   border-radius: 4px;
   margin: 15px 0px;
+  width: 30vw;
 }
 
 .ingredient-list{
