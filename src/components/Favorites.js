@@ -5,7 +5,7 @@ const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/favorites`)
+    fetch(`https://fake-server-hosting.herokuapp.com/favorites`)
     .then(res => res.json())
     .then(data => {
       setFavorites(data)

@@ -5,7 +5,7 @@ const FavoriteCard = ({recipeLinkId, recipeDetails, onDelete}) => {
 
   const handleDelete = (id) => {
     //delete from db
-    fetch(`http://localhost:3001/favorites/${id}`, {
+    fetch(`https://fake-server-hosting.herokuapp.com/favorites/${id}`, {
     method: 'DELETE'
     })
     .then(onDelete(id))

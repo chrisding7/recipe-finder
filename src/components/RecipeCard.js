@@ -12,7 +12,7 @@ const RecipeCard = ({id, recipeDetails, checkFavoriteId}) => {
   //handle actual add-to-favorites button
   const handleFavorite = () => {
     if (!isFavorited) {
-      fetch("http://localhost:3001/favorites", {
+      fetch("https://fake-server-hosting.herokuapp.com/favorites", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
