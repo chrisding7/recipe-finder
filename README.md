@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# Introduction: Building a Recipe Finder 
+Contributors: Anna Schmidt, Cindy Qu, Chris Ding
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our Phase 2 Project, [Endless Eats](https://endlesseats.netlify.app/)! Our partner group has created an application that allows users to interact with a database containing 2.3 million recipes. Interactions include searching, adding to a list of favorites, and viewing ingredients and full recipes. Along with being a topic of self-interest, our application has helped to reinforce learning important concepts such as setting state in React, passing properties (props) between components, and utilizing Route and Switch components.
 
-## Available Scripts
+## Description
+Written with JavaScript, ReactJS (and JSX), and HTML/CSS, our application is a single-page application that utilizes client-side routes to help users navigate between pages. The application uses data from the [Edamam API](https://edamam.com) whose specific documentation for our GET requests can be found [here](https://developer.edamam.com/edamam-docs-recipe-api).
 
-In the project directory, you can run:
+When brought to the Home page of the application, users are greeted with a short description of our project and the option to continue onto the Recipes page. The Recipes page allows users to concentrate their search on an initial 20 recipes that can be expanded with the "Show More" button on the bottom of the page. Individual recipe cards show the name of the recipe, an image, and the ability to view its ingredients and add it to a persisted list of favorites. 
 
-### `npm start`
+When viewing the ingredients of a recipe, the full recipe page can be accessed by clicking the "Full Recipe" button at the bottom of the page. When adding a recipe to the list of favorites, the favorites can be accessed by navigating to the Favorites page using the Navigation Bar in the top-left corner of each page. The favorites list will then render each favorited recipe as its own individual card, with the same functionality as its counterpart on the Recipes page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+On the Recipes page, each initial page load and subsequent click of the "Show More" button sends a GET request to the Edamam API. Since we have built our project using the free developer package from the Edamam API, the number of requests is limited to 10 calls per minute. Our application will manually throw an error alert if users exceed 10 calls within the minute.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Front and Back End Deployment
 
-### `npm test`
+This project was deployed with [Netlify](https://netlify.com) and [Heroku](https://heroku.com). This allows the user to view the application in the browser without the need to run local scripts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
